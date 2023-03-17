@@ -1,6 +1,6 @@
 function calculateMinCost() {
   //your code here
-	const ropeLengthStr=document.getElementById("rope-length").value;
+	const ropeLengthStr=document.getElementById('rope-length').value;
 	const ropeLengthArr=ropeLengthStr.split(',').map(Number);
 	const n=ropeLengthArr.length;
 
@@ -8,7 +8,7 @@ function calculateMinCost() {
 	for(let i=0;i<n;i++){
 		pq.push(ropeLengthArr[i]);
 	}
-	pq.sort(function(a, b) {return a-b});
+	pq.sort(function(a, b) {return a-b;});
 
 	let res=0;
 	while(pq.length>1){
